@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import LoginForm from '../components/login-form'
 
-export default function Home() {
+export default function Auth() {
   return (
     <div className={styles.container}>
       <Head>
@@ -11,13 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Go to <a href="/auth">Auth</a>
-        </h1>
-
-        <p className={styles.description}>
-          Page to authenticate yourself{' '}
-        </p>
+        <LoginForm/>
       </main>
     </div>
   )
